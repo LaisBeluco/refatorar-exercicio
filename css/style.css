@@ -60,7 +60,7 @@ body {
   width: 500px;
 }
 
-.vantagens {
+article h2 {
   align-self: center;
   grid-column: 1/2;
   font-size: 4rem;
@@ -71,42 +71,12 @@ body {
   padding: 4rem;
 }
 
-.informacao {
-  grid-column: 2;
-}
-
-.explicando {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.9rem;
-  padding: 0.2rem;
-  margin: 2rem;
-}
-
-.explicando2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.9rem;
-  padding: 0.2rem;
-  margin: 2rem;
-}
-
-.explicando3 {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.9rem;
-  padding: 0.2rem;
-  margin: 2rem;
-}
-
 .item {
-  place-self: start;
-}
-
-.item-dois {
-  font-size: 1.4rem;
-  grid-column: 2;
-  padding-right: 4.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+  padding: 0.2rem;
+  margin: 2rem;
 }
 
 .footer {
