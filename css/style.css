@@ -7,8 +7,14 @@ body {
   background: rgb(247, 247, 247);
 }
 
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
 .menu {
-  margin: 3rem;
+  margin-bottom: 3rem;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -40,9 +46,9 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0.1rem;
   background-color: white;
   max-width: 1000px;
+  gap: 0.4rem;
 }
 
 .intro {
@@ -52,12 +58,16 @@ body {
   align-self: center;
   justify-items: end;
   background: white;
-  padding: 40px;
+  gap: 1rem;
+  padding: 0 0.75rem;
 }
 
-.bicicleta {
-  grid-column: 2;
-  width: 500px;
+.botao {
+  background-color: #e21;
+  color: #fff;
+  padding: 1rem 1.875rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
 }
 
 article h2 {
@@ -77,6 +87,10 @@ article h2 {
   gap: 0.9rem;
   padding: 0.2rem;
   margin: 2rem;
+}
+
+.item p {
+  grid-column: 2;
 }
 
 .footer {
