@@ -2,7 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   justify-items: center;
-  box-sizing: border-box;
   background: rgb(247, 247, 247);
 }
 
@@ -39,25 +38,19 @@ body {
   justify-content: center;
 }
 
-.grid {
+.introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
   gap: 0.4rem;
 }
 
-.introducao {
-  position: relative;
-}
-
-.introducao::before {
-  content: "";
-  width: 60px;
-  height: 4px;
-  background-color: #e21;
-  position: absolute;
-  top: 40px;
-  left: 437px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
 }
 
 .introducao2 {
@@ -73,6 +66,17 @@ body {
   background: white;
   gap: 1rem;
   padding: 0 1rem;
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  right: -35px;
+  top: -20px;
 }
 
 .botao {
@@ -129,7 +133,11 @@ li {
 }
 
 .footer {
-  margin-top: 1.2rem;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 h1,
