@@ -1,6 +1,5 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 4rem;
   display: grid;
   justify-items: center;
   box-sizing: border-box;
@@ -24,16 +23,13 @@ body {
   padding: 0.5rem;
   padding: 0.3rem 0.7rem;
   border-radius: 0.25rem;
+  border: 2px solid #fff;
   color: black;
   transition: 300ms;
 }
 
 .menu li:hover {
-  background-color: gray;
-}
-
-.menu li:hover a {
-  color: white;
+  border: 2px solid #e21;
 }
 
 .menu ul {
@@ -46,9 +42,26 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: white;
   max-width: 1000px;
   gap: 0.4rem;
+}
+
+.introducao {
+  position: relative;
+}
+
+.introducao::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 40px;
+  left: 437px;
+}
+
+.introducao2 {
+  background-color: #ffff;
 }
 
 .intro {
@@ -59,7 +72,7 @@ body {
   justify-items: end;
   background: white;
   gap: 1rem;
-  padding: 0 0.75rem;
+  padding: 0 1rem;
 }
 
 .botao {
@@ -68,29 +81,51 @@ body {
   padding: 1rem 1.875rem;
   border-radius: 0.25rem;
   text-transform: uppercase;
+  transition: 300ms;
 }
 
-article h2 {
+.botao:hover {
+  background: #a21441;
+}
+
+.subtituto {
   align-self: center;
-  grid-column: 1/2;
   font-size: 4rem;
   text-align: right;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
-  background: rgb(247, 247, 247);
-  padding: 4rem;
+  background-image: url(/img/onda.svg);
+  padding: 0 0.25rem;
+}
+
+.explicando {
+  font-size: 20px;
+  padding: 40px;
 }
 
 .item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.9rem;
-  padding: 0.2rem;
-  margin: 2rem;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem 1.25rem;
+  padding: 20px;
+  border-left: 3px solid transparent;
+}
+
+.item,
+li {
+  margin: 0px;
+}
+
+.item:hover {
+  border-left: 3px solid #e21;
 }
 
 .item p {
   grid-column: 2;
+}
+
+.item:nth-child(odd) {
+  background-color: #f7f7f7;
 }
 
 .footer {
