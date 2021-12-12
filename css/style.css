@@ -79,6 +79,11 @@ body {
   top: -20px;
 }
 
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .botao {
   background-color: #e21;
   color: #fff;
@@ -138,6 +143,49 @@ li {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .menu ul {
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 819px) {
+  .menu ul {
+    gap: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .grid,
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .intro {
+    padding: 2rem;
+    text-align: left;
+    justify-items: start;
+  }
+  .intro::before {
+    display: none;
+  }
+  .subtituto {
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem 0;
+  }
 }
 
 h1,
